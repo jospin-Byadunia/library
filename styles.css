@@ -1,0 +1,147 @@
+/* Color Palette */
+:root {
+    --deep-navy: #00487C;
+    --sky-blue: #4BB3FD;
+    --slate-gray-blue: #3E6680;
+    --bright-blue: #0496FF;
+    --strong-blue: #027BCE;
+}
+
+body.page-bg {
+    background-color: var(--deep-navy);
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    max-width: 400px;
+    /* margin: 50px auto; */
+    padding: 20px;
+    background-color: var(--slate-gray-blue);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.book-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--sky-blue);
+}
+
+.form-input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid var(--bright-blue);
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: var(--sky-blue);
+}
+
+.submit-btn {
+    padding: 10px;
+    background-color: var(--bright-blue);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--strong-blue);
+}
+
+/* Header */
+.main-header {
+    background-color: var(--slate-gray-blue);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid var(--bright-blue);
+}
+
+.site-title {
+    margin: 0;
+    font-size: 2rem;
+    color: var(--sky-blue);
+}
+
+.site-tagline {
+    font-size: 1.1rem;
+    color: #e0f4ff;
+    margin: 5px 0 15px;
+}
+
+/* Navigation */
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: var(--bright-blue);
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--strong-blue);
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.book-section {
+    background-color: var(--slate-gray-blue);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.section-title {
+    color: var(--sky-blue);
+    margin-top: 0;
+}
+
+/* Books Container */
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Example Book Card (You can style dynamically generated books like this) */
+.book-card {
+    background-color: var(--deep-navy);
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid var(--bright-blue);
+    color: white;
+}

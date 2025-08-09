@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the 2222 Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-bg">
+    <header class="main-header">
+        <h1 class="site-title">Welcome to the 2222 Library</h1>
+        <p class="site-tagline">Here you can find all your favorite books!</p>
+        <nav class="main-nav">
+            <ul>
+                <li><button class="nav-link">Home</a></li>
+                <li><button class="nav-link" id="add-book-btn">Add a Book</button>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section id="book-list" class="book-section">
+            <h2 class="section-title">Our Books</h2>
+            <div id="books_container" class="books-container"></div>
+        </section>
+        <div class="form-container" id="form-container">
+        <form action="" method="post" class="book-form" id="book-form">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" name="title" id="title" class="form-input">
+
+            <label for="author" class="form-label">Author</label>
+            <input type="text" name="author" id="author" class="form-input">
+
+            <label for="pages" class="form-label">Pages</label>
+            <input type="number" name="pages" id="pages" class="form-input">
+
+            <button type="submit" class="submit-btn">Add Book</button>
+        </form>
+    </div>
+    </main>
+    <footer class="main-footer">
+        <p class="footer-text">© 2222 Library. All rights reserved.</p>
+</body>
+<script src="/script.js"></script>
+</html>
